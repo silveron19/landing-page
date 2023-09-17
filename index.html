@@ -117,7 +117,7 @@
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                const offset = targetElement.getBoundingClientRect().top + window.scrollY - 50; // Sesuaikan angka 50 dengan jarak yang Anda inginkan dari atas elemen
+                const offset = targetElement.getBoundingClientRect().top + window.scrollY - 50;
                 window.scrollTo({
                     top: offset,
                     behavior: 'smooth'
