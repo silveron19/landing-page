@@ -1,0 +1,244 @@
+:root {
+    --bg1: #1F2937;
+    --bg2: #E5E7EB;
+    --font1: #F9FAF8;
+    --font2: #1F2937;
+    --font3: #E5E7EB;
+    --button: #3882F6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 14%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--bg1);
+}
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--font1);
+}
+
+.navbar .navbar-nav a {
+    color: rgba(229, 231, 235, 0.8);
+    display: inline-flex;
+    font-size: 1.125rem;
+    margin: 0.2rem 0rem 0rem 1.2rem;
+    font-weight: 100;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #e5e7ebbb;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--bg2);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Hero */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    padding: 1.4rem 14%;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--bg1);
+}
+
+.hero .content {
+    max-width: 27rem;
+    display: inline-block;
+    color: var(--font1);
+}
+
+.hero .content .main_text {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero .content p:nth-child(2) {
+    padding-top: 0.5rem;
+    font-size: 1.125rem;
+    color: rgba(229, 231, 235, 0.8);
+    font-weight: 300;
+}
+
+.hero .content .cta {
+    max-width: 8rem;
+    margin-top: 1rem;
+    padding: 0.6rem 7%;
+    color: solid 1% var(--font3);
+    font-weight: 500;
+    background-color: var(--button);
+    border-radius: 10px;
+    font-size: 1.125rem;
+}
+
+.hero .placeholder h5 {
+    margin-left: 4rem;
+    padding: 8rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--font3);
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Information */
+.info {
+    display: inline-block;
+    width: 100%;
+    min-height: 75vh;
+    padding: 3rem 14%;
+    text-align: center;
+}
+
+.info strong {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--font2);
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.info .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.info .container .row .placeholder {
+    width: 12rem;
+    height: 12rem;
+    border: 0.2rem solid #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.info .container .row p {
+    margin-top: 0.5rem;
+    font-weight: 900;
+    color: rgba(31, 41, 55, 0.6);
+}
+
+/* Quotes */
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: auto;
+    background-color: var(--bg2);
+    width: 100%;
+}
+
+.quote p {
+    max-width: 50rem;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.quote strong {
+    max-width: 50rem;
+    margin-left: 35rem;
+    font-size: 1.5rem;
+}
+
+/* CTA */
+.cta {
+    display: flex;
+    align-items: center;
+    margin: 7rem auto;
+    width: 70rem;
+    height: 10rem;
+    color: var(--font3);
+    background-color: var(--button);
+    border-radius: 10px;
+
+}
+
+.cta .container {
+    width: 100%;
+    display: flex;
+    padding: 8rem;
+}
+
+.cta .container .content p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.cta .container .content p:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.cta .container .button {
+    display: flex;
+    border: solid 3px var(--font1);
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+    width: 9rem;
+    border-radius: 10px;
+    color: solid 1% var(--font3);
+    font-size: 1.125rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: var(--bg1);
+    margin-top: 3rem;
+    padding: 2.5rem 0;
+    color: var(--font3);
+    font-weight: 300;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    top: -2px;
+}

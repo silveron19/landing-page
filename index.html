@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Copyright Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght@20,300" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Header Logo</a>
+        <div class="navbar-nav">
+            <a href="#linkone">header link one</a>
+            <a href="#linktwo">header link two</a>
+            <a href="#linkthree">header link three</a>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start  -->
+    <section class="hero" id="linkone">
+        <main class="content">
+            <p class="main_text">This website is awesome</p>
+            <p>This website has some subtext that goes here under
+                the main title. It's smaller font and the color is lower
+                contrast
+            </p>
+            <a href="#register" class="cta">Sign up</a>
+        </main>
+        <div class="placeholder">
+            <h5>this is a placeholder for an image</h5>
+        </div>
+    </section>
+    <!-- Hero Section end  -->
+
+    <!-- Information Section start -->
+    <section class="info" id="linktwo">
+        <strong>Some random information.</strong>
+        <div class="container">
+            <div class="row">
+                <div class="placeholder"></div>
+                <p>This is some subtext under an illustration or image</p>
+            </div>
+            <div class="row">
+                <div class="placeholder"></div>
+                <p>This is some subtext under an illustration or image</p>
+            </div>
+            <div class="row">
+                <div class="placeholder"></div>
+                <p>This is some subtext under an illustration or image</p>
+            </div>
+            <div class="row">
+                <div class="placeholder"></div>
+                <p>This is some subtext under an illustration or image</p>
+            </div>
+        </div>
+    </section>
+    <!-- Information Section end -->
+
+    <!-- Quotes Section start -->
+    <section class="quote" id="linkthree">
+        <p>This is an inspiring quote, or a testimonial from a
+            customer. Maybe it's just filling up space, or maybe
+            people will actually read it. Who knows ? All I know
+            is that it looks nice.
+        </p>
+        <strong>-Thor, God of Thunder</strong>
+    </section>
+    <!-- Quotes Section end -->
+
+    <!-- CTA section start -->
+    <section class="cta">
+        <div class="container">
+            <div class="content">
+                <p>Call to action! It's time!</p>
+                <p>Sign up for our product by clicking that button right
+                    over there!
+                </p>
+            </div>
+            <a href="#register" class="button">Sign up</a>
+        </div>
+    </section>
+    <!-- CTA section end -->
+
+    <!-- Footer section start -->
+    <footer class="footer">
+        <p>Copyright
+            <span class="material-symbols-outlined">
+                copyright
+            </span> Silveron 2023
+        </p>
+    </footer>
+    <!-- Footer section end -->
+
+</body>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offset = targetElement.getBoundingClientRect().top + window.scrollY - 50; // Sesuaikan angka 50 dengan jarak yang Anda inginkan dari atas elemen
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</html>
