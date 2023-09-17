@@ -94,7 +94,8 @@ body {
     font-weight: 300;
 }
 
-.hero .content .cta {
+.hero .content .button {
+    display: flex;
     max-width: 8rem;
     margin-top: 1rem;
     padding: 0.6rem 7%;
