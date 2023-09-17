@@ -31,8 +31,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
     background-color: var(--bg1);
+    z-index: 99;
 }
 
 .navbar .navbar-logo {
@@ -43,14 +43,14 @@ body {
 
 .navbar .navbar-nav a {
     color: rgba(229, 231, 235, 0.8);
-    display: inline-flex;
+    display: inline-block;
     font-size: 1.125rem;
     margin: 0.2rem 0rem 0rem 1.2rem;
     font-weight: 100;
 }
 
 .navbar .navbar-nav a:hover {
-    color: #e5e7ebbb;
+    color: #bcbec2bb;
 }
 
 .navbar .navbar-nav a::after {
@@ -68,16 +68,18 @@ body {
 
 /* Hero */
 .hero {
-    min-height: 85vh;
     display: flex;
-    padding: 1.4rem 14%;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 85vh;
+    padding: 1.4rem 5%;
     align-items: center;
+    margin-top: 4rem;
     background-color: var(--bg1);
 }
 
 .hero .content {
     max-width: 27rem;
-    display: inline-block;
     color: var(--font1);
 }
 
@@ -103,10 +105,15 @@ body {
     background-color: var(--button);
     border-radius: 10px;
     font-size: 1.125rem;
+    text-align: center;
+}
+
+.hero .placeholder {
+    margin: 4rem;
 }
 
 .hero .placeholder h5 {
-    margin-left: 4rem;
+
     padding: 7rem;
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--font3);
@@ -118,7 +125,6 @@ body {
 /* Information */
 .info {
     display: inline-block;
-    width: 100%;
     min-height: 75vh;
     padding: 3rem 14%;
     text-align: center;
@@ -132,15 +138,17 @@ body {
 
 .info .container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .info .container .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem;
+    flex: 1;
+    margin: 2rem;
 }
 
 .info .container .row .placeholder {
