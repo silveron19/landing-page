@@ -113,7 +113,6 @@ body {
 }
 
 .hero .placeholder h5 {
-
     padding: 7rem;
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--font3);
@@ -181,13 +180,12 @@ body {
 .quote p {
     max-width: 50rem;
     font-size: 2.25rem;
-    font-style: italic;
     font-weight: 300;
+    font-style: italic;
     text-align: justify;
 }
 
 .quote strong {
-    max-width: 50rem;
     margin-left: 35rem;
     font-size: 1.5rem;
 }
@@ -196,19 +194,19 @@ body {
 .cta {
     display: flex;
     align-items: center;
-    margin: 7rem auto;
+    margin: 8rem auto;
     width: 70rem;
     height: 10rem;
     color: var(--font3);
     background-color: var(--button);
     border-radius: 10px;
-
 }
 
 .cta .container {
-    width: 100%;
     display: flex;
     padding: 8rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta .container .content p:nth-child(1) {
@@ -225,12 +223,13 @@ body {
     display: flex;
     border: solid 3px var(--font1);
     margin-top: 0.5rem;
+    margin-left: 10rem;
     align-items: center;
     justify-content: center;
-    margin-left: 10rem;
     width: 9rem;
+    height: 3rem;
     border-radius: 10px;
-    color: solid 1% var(--font3);
+    color: var(--font1);
     font-size: 1.125rem;
 }
 
